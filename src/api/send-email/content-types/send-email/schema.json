@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "send_emails",
+  "info": {
+    "singularName": "send-email",
+    "pluralName": "send-emails",
+    "displayName": "send-email",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inn_organization": {
+      "type": "string",
+      "required": true
+    },
+    "full_name_organization": {
+      "type": "string",
+      "required": true
+    },
+    "full_name_ceo": {
+      "type": "string",
+      "required": true
+    },
+    "full_name_responsible_employee": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    },
+    "balance_three_years": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "report_profit_loss_three": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "cash_flow_statement": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "statement_of_changes_equity": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "decoding_debtors_repayment": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "decoding_credits": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "decoding_fixed_assets": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "Conclusion_confirmation": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

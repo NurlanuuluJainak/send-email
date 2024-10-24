@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .ol>li {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .ol>li>ul>li {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        table {
+            display: inline-flex;
+            gap: 5px;
+            border-collapse: collapse;
+            border: 1px solid blue;
+        }
+
+        table tr {
+            border-bottom: 1px solid blue;
+            display: block;
+            width: 30vw;
+            margin: 0px;
+        }
+
+        table td,
+        table th {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            table tr {
+                border-bottom: 1px solid blue;
+                display: block;
+                width: 45vw;
+                margin: 0px;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="header">
+        <h1>Заголовок письма</h1>
+    </div>
+    <div class="content">
+        <div>
+            <ol class="ol">
+                <li>ИНН организации:
+                    <ul>
+                        <li>${result.inn_organization}</li>
+                    </ul>
+                </li>
+                <li>Полное наименование организации:
+                    <ul>
+                        <li>${result.full_name_organization}</li>
+                    </ul>
+                </li>
+                <li>ФИО руководителя организации:
+                    <ul>
+                        <li>${result.full_name_ceo}</li>
+                    </ul>
+                </li>
+                <li>ФИО ответственного сотрудника:
+                    <ul>
+                        <li>${result.full_name_responsible_employee}</li>
+                    </ul>
+                </li>
+                <li>Контакты:
+                    <ul>
+                        <li>${result.contact}</li>
+                    </ul>
+                </li>
+            </ol>
+
+        </div>
+        <h3>Файлы</h3>
+        <div>
+            <ol class="ol">
+                <li>Балансовый отчет за 3 года
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+
+                <li>Отчет о прибылях и убытках за 3 года
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+
+                <li>Отчет о движениях денежных средств за 3 года
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+
+                <li>Отчет об изменениях в капитале (если таковое имело место в последние 2 года)
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+                <li>Расшифровка дебиторов с датой возникновения и погашения задолженности
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+                <li>Расшифровка кредиторов с датами погашения, с приложениями договоров займа
+
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+                <li>Заключение/подтверждение внешнего аудитора за последний год, которое должны предоставить заемщики -
+                    юридические лица, обязанные проходить ежегодный аудит согласно законодательству Кыргызской
+                    Республики
+                    <ul>
+                        <li> <a>${result.inn_organization}</a></li>
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Это футер письма.</p>
+    </div>
+</body>
+
+</html>
